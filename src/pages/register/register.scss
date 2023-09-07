@@ -1,0 +1,89 @@
+.register {
+  height: 100vh;
+  background-color: rgb(193, 190, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .card {
+    width: 70%;
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    min-height: 500px;
+    overflow: hidden;
+    .right {
+      flex: 1;
+      background: linear-gradient(rgba(39, 11, 96, 0.5), rgba(39, 11, 96, 0.5)),
+        url("https://images.pexels.com/photos/4427431/pexels-photo-4427431.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")
+          center;
+      padding: 50px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      h1 {
+        font-size: 100px;
+        color: white;
+      }
+      p {
+        font-size: 20px;
+        color: white;
+      }
+      span {
+        font-size: 20px;
+        color: white;
+      }
+      button {
+        width: 50%;
+        height: 50px;
+        border: none;
+        border-radius: 5px;
+        background-color: white;
+        color: black;
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        &:hover {
+          background-color: rgb(193, 190, 255, 0.5);
+        }
+      }
+    }
+    .left {
+      flex: 1;
+      padding: 50px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      justify-content: center;
+      h1 {
+        color: #555;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        input {
+          border: none;
+          border-bottom: 1px solid #555;
+          padding: 20px 10px;
+        }
+        button {
+          width: 50%;
+          height: 50px;
+          border: none;
+          border-radius: 5px;
+          background-color: rgb(193, 190, 255);
+          color: white;
+          font-size: 20px;
+          font-weight: bold;
+          cursor: pointer;
+          transition: all 0.3s ease;
+          &:hover {
+            background-color: rgb(193, 190, 255, 0.5);
+          }
+        }
+      }
+    }
+  }
+}
