@@ -3,8 +3,8 @@
   align-items: center;
   justify-content: space-between;
   padding: 10px 20px;
-  background-color: #fff;
-  border-bottom: 1px solid #555;
+  background-color: #ededed;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
   z-index: 999;
@@ -15,11 +15,14 @@
     gap: 20px;
     img {
       width: 40px;
+      height: 40px;
+      cursor: pointer;
     }
     h1 {
       font-weight: 700;
       font-size: 30px;
       color: #555;
+      cursor: pointer;
     }
   }
 
@@ -27,11 +30,16 @@
     display: flex;
     align-items: center;
     gap: 20px;
+
     input {
       width: 500px;
       border: none;
-      border-bottom: 1px solid #555;
-      padding: 20px 10px;
+      padding: 10px 10px;
+      border-radius: 5px;
+    }
+    /*---> when the search is selected it shouldn't be highlighted <---*/
+    input:focus {
+      outline: none;
     }
   }
 
@@ -41,11 +49,14 @@
     gap: 20px;
     img {
       width: 40px;
+      height: 40px;
+      cursor: pointer;
     }
-    h1 {
-      font-weight: 700;
-      font-size: 30px;
+    span {
+      font-size: 20px;
+      font-weight: 500;
       color: #555;
+      cursor: pointer;
     }
     .user {
       display: flex;
@@ -53,12 +64,16 @@
       gap: 20px;
       img {
         width: 40px;
+        height: 40px;
         border-radius: 50%;
+        cursor: pointer;
+        object-fit: cover;
       }
-      h1 {
-        font-weight: 700;
-        font-size: 30px;
+      span {
+        font-size: 20px;
+        font-weight: 500;
         color: #555;
+        cursor: pointer;
       }
     }
   }
