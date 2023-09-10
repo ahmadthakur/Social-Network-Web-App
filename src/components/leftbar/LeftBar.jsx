@@ -27,6 +27,7 @@ const LeftBar = () => {
           <span>Events</span>
         </div>
       </div>
+      <hr></hr>
     </div>
   );
 };

@@ -1,6 +1,6 @@
 .register {
   height: 100vh;
-  background-color: rgb(193, 190, 255);
+  background-color: #f5f5f5;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -14,73 +14,115 @@
     overflow: hidden;
     .right {
       flex: 1;
-      background: linear-gradient(rgba(39, 11, 96, 0.5), rgba(39, 11, 96, 0.5)),
+      background: linear-gradient(
+          hsla(255, 100%, 60%, 0.5),
+          hsla(255, 100%, 60%, 0.5)
+        ),
         url("https://images.pexels.com/photos/4427431/pexels-photo-4427431.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")
           center;
-      padding: 50px;
+      padding: 2rem;
       display: flex;
       flex-direction: column;
-      gap: 20px;
+      gap: 1.25rem;
+      justify-content: center;
       h1 {
-        font-size: 100px;
+        font-size: 6.25rem;
         color: white;
       }
       p {
-        font-size: 20px;
+        font-size: 1.25rem;
         color: white;
       }
       span {
-        font-size: 20px;
-        color: white;
+        font-size: 1.25rem;
+        color: hsl(0, 0%, 100%);
       }
       button {
         width: 50%;
-        height: 50px;
+        height: 3.125rem;
         border: none;
         border-radius: 5px;
         background-color: white;
-        color: black;
-        font-size: 20px;
+        color: hsl(0, 0%, 0%);
+        font-size: 1.25rem;
         font-weight: bold;
         cursor: pointer;
         transition: all 0.3s ease;
         &:hover {
-          background-color: rgb(193, 190, 255, 0.5);
+          background-color: grey;
         }
       }
     }
     .left {
       flex: 1;
-      padding: 50px;
+      padding: 2rem;
       display: flex;
       flex-direction: column;
-      gap: 20px;
+      gap: 1.25rem;
       justify-content: center;
       h1 {
-        color: #555;
+        font-size: 3.125rem;
+        color: hsl(0, 0%, 33%);
       }
       form {
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        gap: 1.25rem;
         input {
           border: none;
-          border-bottom: 1px solid #555;
-          padding: 20px 10px;
+          border-bottom: 1px solid hsl(0, 0%, 33%);
+          padding: 1.25rem 0.625rem;
         }
         button {
           width: 50%;
-          height: 50px;
+          height: 3.125rem;
           border: none;
           border-radius: 5px;
-          background-color: rgb(193, 190, 255);
+          background-color: hsl(255, 100%, 75%);
           color: white;
-          font-size: 20px;
+          font-size: 1.25rem;
           font-weight: bold;
           cursor: pointer;
           transition: all 0.3s ease;
           &:hover {
-            background-color: rgb(193, 190, 255, 0.5);
+            background-color: hsla(246, 50%, 75%, 0.8);
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .card {
+      flex-direction: column;
+      .right {
+        order: 2;
+        padding: 1rem;
+        h1 {
+          font-size: 1rem;
+        }
+        p {
+          font-size: 1rem;
+        }
+        span {
+          font-size: 1rem;
+        }
+        button {
+          width: 100%;
+        }
+      }
+      .left {
+        order: 1;
+        padding: 1rem;
+        h1 {
+          font-size: 1rem;
+        }
+        form {
+          input {
+            padding: 1rem 0.5rem;
+          }
+          button {
+            width: 100%;
           }
         }
       }

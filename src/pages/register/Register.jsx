@@ -18,10 +18,9 @@ const Register = () => (
         <div className="right">
           <h1>Social Network</h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+            Welcome to our social network! Connect with friends, share your
+            thoughts and experiences, and discover new communities. Join us
+            today and start exploring a world of possibilities.
           </p>
           <span>Already have an account?</span>
           <Link to="/login">

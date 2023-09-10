@@ -7,6 +7,7 @@ import NotificationsNoneOutlinedIcon from "@mui/icons-material/NotificationsNone
 import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined";
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
+import Brand from "../../assets/logo/brand.png";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
@@ -14,9 +15,8 @@ const Navbar = () => {
     <div className="navbar">
       <div className="navbar__left">
         <Link to="/">
-          <span>Social Network</span>
+          <img className="brand" src={Brand}></img>
         </Link>
-
         <HomeOutlinedIcon />
         <DarkModeOutlinedIcon />
         <GridViewOutlinedIcon />
